@@ -1,0 +1,350 @@
+<!-- Create a html pages use h1 to h6,p,
+
+Using DIV   single , Multiple, float ,display flex, grid , inline -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html page</title>
+  </head>
+  <body>
+    <h2 style="background-color: maroon; color: white">HTML Introduction</h2>
+
+    <p>
+      HTML (HyperText Markup Language) is the standard markup language used to
+      create and structure web pages. It helps browsers display content such as
+      headings, paragraphs, images, links, tables, and forms.
+    </p>
+
+    <p>
+      HTML was created by Tim Berners-Lee in 1991 and HTML5 is the latest
+      version used for modern web development.
+    </p>
+
+    <h2 style="background-color: maroon; color: white">HTML Structure</h2>
+
+    <ul>
+      <li>
+        <strong>&lt;!DOCTYPE html&gt;</strong> - Tells the browser that the
+        document is an HTML5 document.
+      </li>
+
+      <li>
+        <strong>&lt;html&gt;</strong> - The root element that contains all the
+        content of the webpage.
+      </li>
+
+      <li>
+        <strong>&lt;head&gt;</strong> - Contains metadata such as title, styles,
+        and character settings.
+      </li>
+
+      <li>
+        <strong>&lt;body&gt;</strong> - Contains all visible content displayed
+        on the webpage.
+      </li>
+    </ul>
+
+    <h2 style="background-color: maroon; color: white">
+      Section Element Example
+    </h2>
+
+    <section style="background-color: cadetblue">
+      <h3>About Chennai</h3>
+
+      <p>
+        Chennai is the capital city of Tamil Nadu. It is known for its culture,
+        beaches, and IT industries.
+      </p>
+    </section>
+
+    <h2 style="background-color: maroon; color: white">
+      Block vs Inline Elements
+    </h2>
+
+    <h3>Block Elements</h3>
+
+    <p style="background-color: beige">
+      Paragraph 1 - A paragraph is a block-level element.
+    </p>
+
+    <p style="background-color: blueviolet">
+      Paragraph 2 - It starts on a new line and takes full width.
+    </p>
+
+    <h3>Inline Elements</h3>
+
+    <p>
+      My favorite colors are
+      <span style="background-color: yellow">Yellow</span>,
+      <span style="background-color: lightblue">Blue</span>, and
+      <span style="background-color: lightgreen">Green</span>.
+    </p>
+
+    <p>
+      The &lt;span&gt; element is an inline element because it only takes the
+      space required by its content.
+    </p>
+
+    <h2 style="background-color: maroon; color: white">h1 to h6,p:</h2>
+    <h1>MONDAY</h1>
+    <h2>TUESDAY</h2>
+    <h3>WEDNESDAY</h3>
+    <h4>THURSDAY</h4>
+    <h5>FRIDAY</h5>
+    <h6>SATURDAY</h6>
+    <h6>SUNDAY</h6>
+
+    <p>The above are the days in a week Lorem ipsum dolor sit amet.</p>
+
+    <div>
+      <h2 style="background-color: maroon; color: white">
+        Single div propert:
+      </h2>
+      <h3>Chennai Super kings</h3>
+      <ul>
+        <li>Dhoni</li>
+        <li>Samson</li>
+        <li>Rutu</li>
+      </ul>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+        laboriosam, ipsa nam ducimus commodi dolores.
+      </p>
+    </div>
+
+    <div>
+      <div>
+        <h2 style="background-color: maroon; color: white">
+          Multi div Property:
+        </h2>
+        <h3>Chennai Super kings</h3>
+        <ul>
+          <li>Dhoni</li>
+          <li>Samson</li>
+          <li>Rutu</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+
+      <div>
+        <h3>Mumbai</h3>
+        <ul>
+          <li>Rohit</li>
+          <li>Hardik</li>
+          <li>Suriya</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+
+      <div>
+        <h3>Royal Challengers Bengaluru</h3>
+        <ul>
+          <li>Virat</li>
+          <li>Patidar</li>
+          <li>Bhuvi</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+    </div>
+
+    <h2 style="background-color: maroon; color: white">Float left property:</h2>
+    <div style="width: 100%">
+      <div style="background-color: yellow; width: 33%; float: left">
+        <h3>Chennai Super kings</h3>
+        <ul>
+          <li>Dhoni</li>
+          <li>Samson</li>
+          <li>Rutu</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+
+      <div style="background-color: Blue; width: 33%; float: left">
+        <h3>Mumbai</h3>
+        <ul>
+          <li>Rohit</li>
+          <li>Hardik</li>
+          <li>Suriya</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+
+      <div style="background-color: red; width: 33%; float: left">
+        <h3>Royal Challengers Bengaluru</h3>
+        <ul>
+          <li>Virat</li>
+          <li>Patidar</li>
+          <li>Bhuvi</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+    </div>
+
+    <div style="clear: both; height: 20px"></div>
+
+    <h1 style="background-color: maroon; color: white; width: 100%">
+      Display-inline property
+    </h1>
+    <div>
+      <div>
+        <div
+          style="background-color: yellow; width: 33%; display: inline-block"
+        >
+          <h3>Chennai Super kings</h3>
+          <ul>
+            <li>Dhoni</li>
+            <li>Samson</li>
+            <li>Rutu</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+            laboriosam, ipsa nam ducimus commodi dolores.
+          </p>
+        </div>
+
+        <div style="background-color: Blue; width: 33%; display: inline-block">
+          <h3>Mumbai</h3>
+          <ul>
+            <li>Rohit</li>
+            <li>Hardik</li>
+            <li>Suriya</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+            laboriosam, ipsa nam ducimus commodi dolores.
+          </p>
+        </div>
+
+        <div style="background-color: red; width: 33%; display: inline-block">
+          <h3>Royal Challengers Bengaluru</h3>
+          <ul>
+            <li>Virat</li>
+            <li>Patidar</li>
+            <li>Bhuvi</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+            laboriosam, ipsa nam ducimus commodi dolores.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="clear: both; height: 20px"></div>
+    <h2
+      style="
+        background-color: maroon;
+        color: white;
+        margin-top: 5px;
+        clear: both;
+      "
+    >
+      Display flex property:
+    </h2>
+    <div style="display: flex; width: 100%">
+      <div style="background-color: yellow; width: 33%">
+        <h3>Chennai Super kings</h3>
+        <ul>
+          <li>Dhoni</li>
+          <li>Samson</li>
+          <li>Rutu</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+
+      <div style="background-color: Blue; width: 33%">
+        <h3>Mumbai</h3>
+        <ul>
+          <li>Rohit</li>
+          <li>Hardik</li>
+          <li>Suriya</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+
+      <div style="background-color: red; width: 33%">
+        <h3>Royal Challengers Bengaluru</h3>
+        <ul>
+          <li>Virat</li>
+          <li>Patidar</li>
+          <li>Bhuvi</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+    </div>
+
+    <h2 style="background-color: maroon; color: white; margin-top: 5px">
+      Display Grid Property:
+    </h2>
+    <div style="display: grid; width: 100%; grid-template-columns: 33% 33% 33%">
+      <div style="background-color: yellow">
+        <h3>Chennai Super kings</h3>
+        <ul>
+          <li>Dhoni</li>
+          <li>Samson</li>
+          <li>Rutu</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+
+      <div style="background-color: Blue">
+        <h3>Mumbai</h3>
+        <ul>
+          <li>Rohit</li>
+          <li>Hardik</li>
+          <li>Suriya</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+
+      <div style="background-color: red">
+        <h3>Royal Challengers Bengaluru</h3>
+        <ul>
+          <li>Virat</li>
+          <li>Patidar</li>
+          <li>Bhuvi</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+          laboriosam, ipsa nam ducimus commodi dolores.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

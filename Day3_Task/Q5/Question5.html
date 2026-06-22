@@ -1,0 +1,54 @@
+<!-- Practice table attributes: colspan, rowspan, and add borders, cell spacing, and padding with CSS. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+  <body>
+    <h2 align="center">Student Details</h2>
+
+    <table
+      border="3"
+      width="50%"
+      align="center"
+      cellspacing="20px"
+      cellpadding="20px"
+    >
+      <tr>
+        <td align="center" colspan="3">
+          <img
+            src="./imagesd3.jpg"
+            alt="College Logo"
+            style="height: 50%; width: 100%; vertical-align: middle"
+          />
+          <br />
+          <p>Government College of Engineering, Dharmapuri</p>
+        </td>
+      </tr>
+      <tr>
+        <td align="center" colspan="3">Student Details</td>
+      </tr>
+      <tr style="background-color: maroon; color: aliceblue">
+        <th>Name</th>
+        <th>Department</th>
+        <th>Year</th>
+      </tr>
+      <tr style="background-color: beige; color: black">
+        <td>Anbu</td>
+        <td>ECE</td>
+        <td rowspan="3">2026</td>
+      </tr>
+      <tr style="background-color: beige; color: black">
+        <td>Vel</td>
+        <td>EEE</td>
+      </tr>
+      <tr style="background-color: beige; color: black">
+        <td>Maran</td>
+        <td>EIE</td>
+      </tr>
+    </table>
+  </body>
+</html>

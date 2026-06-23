@@ -1,0 +1,255 @@
+<!-- Learn the purpose of <form> in HTML. Create a basic form structure with action and method -->
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms</title>
+    </head>
+    <body>
+        <h3 style="background-color: cadetblue;color:azure">Q1.Learn the purpose of <form> in HTML. Create a basic form structure with action and method.</h3>
+
+
+            <form action="./f2.html" method="get">
+
+                <label for="fname1">Student_name:</label>
+                    <input type="text" id="fname1" name="student_name" >
+<br>
+                <br>
+               
+                <label for="fname2">Email:</label>
+                    
+                    <input type="email" id="fname2" name="student_email">
+                    <br> <br>
+                
+<input type="submit" value="Submit">
+            </form>
+
+
+<!-- Practice using <input type="text">, <input type="password">, and <input type="email">. Create a login form. -->
+
+<h3 style="background-color: cadetblue;color:azure">Q2.Practice using &lt;input type="text"&gt;, &lt;input type="password"&gt;, and &lt;input type="email"&gt;. Create a login form.</h3>
+
+<form action="./f2.html" method="get">
+
+                <label for="fname1">Student_name:</label>
+                    <input type="text" id="fname1" name="student_name" >
+<br>
+                <br>
+               
+                <label for="fname2">Email:</label>
+                    
+                    <input type="email" id="fname2" name="student_email">
+                    <br> <br>
+
+                    <label for="fname3">Password:</label>
+                    
+                    <input type="password" id="fname3" name="password">
+                    <br> <br>
+                
+<input type="submit" value="Submit">
+            </form>
+
+            <h3 style="background-color: cadetblue;color:azure" >Q3.Use checkboxes for multiple choices, radio buttons for single choice, and number fields for numeric input.</h3>
+
+            <form action="./f2.html" method="get">
+
+                <label for="fname4">Student_name:</label>
+                    <input type="text" id="fname4" name="student_name" >
+<br>
+                <br>
+                  
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+                <br><br>
+               
+                <label for="fname5">Email:</label>
+                    
+                    <input type="email" id="fname5" name="student_email">
+                    <br> <br>
+
+                    <label for="fname6">Password:</label>
+                    
+                    <input type="password" id="fname6" name="password">
+                    <br> <br>
+
+                  <label>Hobbies:</label>
+
+<input type="checkbox" id="reading" name="hobbies" value="Reading">
+<label for="reading">Reading</label>
+
+<input type="checkbox" id="music" name="hobbies" value="Music">
+<label for="music">Music</label>
+
+<input type="checkbox" id="sports" name="hobbies" value="Sports">
+<label for="sports">Sports</label>
+                   <br>
+<br>
+                   
+                   <input type="radio" name="gender" id="male">
+<label for="male">Male</label>
+
+<input type="radio" name="gender" id="female">
+<label for="female">Female</label>
+
+<input type="radio" name="gender" id="other">
+<label for="other">Others</label>
+                   <br>
+                   <br>
+
+                   <input type="submit" value="Submit">
+            </form>
+<!-- 
+Learn <label> for accessibility and placeholder for hints. Connect labels with inputs using for and id. -->
+
+    <h3 style="background-color: cadetblue;color:azure">Q4.Learn &lt;label&gt; for accessibility and placeholder for hints. Connect labels with inputs using for and id.</h3>
+
+     <h5>What is &lt; label &gt;?</h5>
+
+     The &lt;label&gt; tag provides a description for an input field. It improves accessibility because users can click the label to focus on the input.
+
+          <h5>What is placeholder?<label></h5>
+
+
+
+The placeholder attribute displays a hint inside the input box before the user enters data.
+
+ <br> <br>
+    <form action="./f2.html">
+        <label for="emp" >Employee name: </label>
+            <input  type="text" name="empname" id="emp" placeholder="Enter the name">
+<br> <br>
+            <label for="empsal">Salary: </label>
+            <input type="text" name="empsal" id="empsal" placeholder="Enter the salary">
+             <br> <br>
+
+
+              <input type="submit" value="Submit">
+       
+    </form>
+
+     <br> <br>
+
+
+    <h3 style="background-color: cadetblue;color:azure" >Q5.Use required to make fields mandatory. Practice building a signup form where name, email, and password are required.</h3>
+
+
+    <form action="./f2.html" method="post">
+
+    <label for="signup_name">Name:</label>
+    <input type="text" id="signup_name" name="name" placeholder="Enter your name" required>
+
+    <br><br>
+
+    <label for="signup_email">Email:</label>
+    <input type="email" id="signup_email" name="email" placeholder="Enter your email" required>
+
+    <br><br>
+
+    <label for="signup_password">Password:</label>
+    <input type="password" id="signup_password" name="password" placeholder="Enter your password" required>
+
+    <br><br>
+
+    <input type="submit" value="Sign Up">
+
+</form>
+
+
+
+        
+                <h3 style="background-color: cadetblue;color:azure" >Q6.Explore built-in HTML5 validation (email format, number range, required). Test submitting forms with incorrect data.</h3>
+
+
+                <form action="./f2.html" method="post">
+
+    <label for="validation_name">Name:</label>
+    <input type="text" id="validation_name" required>
+
+    <br><br>
+
+    <label for="validation_email">Email:</label>
+    <input type="email" id="validation_email" required>
+
+    <br><br>
+
+    <label for="validation_age">Age (18-30):</label>
+    <input type="number" id="validation_age" min="18" max="30" required>
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+
+
+
+    <h3 style="background-color: cadetblue;color:azure">Q7.Build a registration form with text, email, password, gender (radio), hobbies (checkbox), age (number), and submit button. Include labels, placeholders, and validation.</h3>
+
+    <form action="./f2.html" method="post">
+
+    <label for="reg_name">Name:</label>
+    <input type="text" id="reg_name" name="name"
+           placeholder="Enter your name" required>
+
+    <br><br>
+
+    <label for="reg_password">Password:</label>
+    <input type="password" id="reg_password" name="password"
+           placeholder="Enter your password" required>
+
+    <br><br>
+
+    <label for="reg_email">Email:</label>
+    <input type="email" id="reg_email" name="email"
+           placeholder="Enter your email" required>
+
+    <br><br>
+
+    <label for="reg_age">Age:</label>
+    <input type="number" id="reg_age" name="age"
+           min="18" max="60" required>
+
+    <br><br>
+
+    <label>Gender:</label><br>
+
+    <input type="radio" name="gender" id="reg_male">
+    <label for="reg_male">Male</label>
+
+    <input type="radio" name="gender" id="reg_female">
+    <label for="reg_female">Female</label>
+
+    <input type="radio" name="gender" id="reg_other">
+    <label for="reg_other">Others</label>
+
+    <br><br>
+
+    <label>Hobbies:</label>
+
+    <input type="checkbox" id="reg_reading" name="hobbies">
+    <label for="reg_reading">Reading</label>
+
+    <input type="checkbox" id="reg_music" name="hobbies">
+    <label for="reg_music">Music</label>
+
+    <input type="checkbox" id="reg_story" name="hobbies">
+    <label for="reg_story">Story Writing</label>
+
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+
+ 
+
+    
+
+
+    </body>
+    </html>

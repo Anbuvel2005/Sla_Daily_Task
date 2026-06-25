@@ -1,0 +1,150 @@
+<!--  Learn how to use <iframe> to embed another webpage (like YouTube video, Google Maps). Practice with height/width attributes. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 style="background-color: red; color: white; padding: 10px">
+      Q1. Learn how to use &lt;iframe&gt; to embed another webpage (like YouTube
+      video, Google Maps). Practice with height/width attributes.
+    </h2>
+    <h3 style="background-color: blue; color: aliceblue; padding: 10px">
+      Youtube Video
+    </h3>
+    <iframe
+      width="500px"
+      height="350px"
+      src="https://www.youtube.com/embed/WmZRIwtsTD0?si=O2mG37Un71HrvLLW"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <br />
+    <br />
+
+    <h2 style="background-color: blue; color: aliceblue; padding: 10px">
+      Google Map
+    </h2>
+    <iframe
+      src="https://maps.google.com/maps?q=Chennai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      width="500"
+      height="350"
+    >
+    </iframe>
+    <br />
+    <br />
+
+    <h2 style="background-color: red; color: aliceblue; padding: 10px">
+      Q2.Explore &lt;embed&gt; and &lt;object&gt; for including media like PDFs,
+      videos, or audio. Practice embedding different file types.
+    </h2>
+
+    <h3 style="background-color: blue; color: aliceblue; padding: 10px">
+      &lt;embed&gt; Tag
+    </h3>
+    <embed src="./Anbu_dev_01.pdf" width="70%" height="500px" />
+
+    <h3 style="background-color: blue; color: aliceblue; padding: 10px">
+      &lt;Object&gt;
+    </h3>
+    <object data="./Pappali Pazhamey.mp3" type="audio/mp3"></object>
+
+    <h3 style="background-color: blue; color: aliceblue; padding: 10px">
+      &lt;Object&gt; Tag
+    </h3>
+    <object
+      data="./10400877-uhd_4096_2160_25fps.mp4"
+      width="700px"
+      height="400px"
+      type="video/mp4"
+    ></object>
+    <br />
+    <br />
+
+    <h2 style="background-color: red; color: aliceblue; padding: 10px">
+      Q3.Build a webpage with a list of favorite movies, a table showing movie
+      details, and an iframe embedding a trailer.
+    </h2>
+
+    <h1 style="background-color: blue; color: aliceblue; padding: 10px">
+      My Favorite Movies
+    </h1>
+
+    <h2>Favorite Movies List</h2>
+    <ul>
+      <li>Leo</li>
+      <li>Vikram</li>
+      <li>Master</li>
+      <li>Jailer</li>
+      <li>Baahubali</li>
+    </ul>
+
+    <h2 style="background-color: blue; color: aliceblue; padding: 10px">
+      Movie Details
+    </h2>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Movie Name</th>
+        <th>Hero</th>
+        <th>Year</th>
+        <th>Genre</th>
+      </tr>
+      <tr>
+        <td>Leo</td>
+        <td>Vijay</td>
+        <td>2023</td>
+        <td>Action</td>
+      </tr>
+      <tr>
+        <td>Vikram</td>
+        <td>Kamal Haasan</td>
+        <td>2022</td>
+        <td>Action Thriller</td>
+      </tr>
+      <tr>
+        <td>Master</td>
+        <td>Vijay</td>
+        <td>2021</td>
+        <td>Action Drama</td>
+      </tr>
+      <tr>
+        <td>Jailer</td>
+        <td>Rajinikanth</td>
+        <td>2023</td>
+        <td>Action Comedy</td>
+      </tr>
+      <tr>
+        <td>Baahubali</td>
+        <td>Prabhas</td>
+        <td>2015</td>
+        <td>Epic Action</td>
+      </tr>
+    </table>
+
+    <h2 style="background-color: blue; color: aliceblue; padding: 10px">
+      Movie Trailer
+    </h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/Po3jStA673E"
+      title="Leo Trailer"
+    >
+    </iframe>
+  </body>
+</html>

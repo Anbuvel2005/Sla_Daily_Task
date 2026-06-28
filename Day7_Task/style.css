@@ -1,0 +1,39 @@
+/* 2..Write CSS in styles.css to meet the following requirements:
+i)Use an element selector to:ii)Set all <p> elements' font color to #555 and line-height to 1.6.
+iii)Use a class selector for .intro to:
+Set the font-style to italic.
+Use a class selector for .highlight to:
+Set background color to #f0f8ff and padding to 8px.
+Use an ID selector for #header to:
+Set text color to #2c3e50 and font-size to 32px.
+Add any additional style to the .box class to:
+Add a border of 1px solid #ccc and padding of 16px. */
+
+/* Element Selector  */
+p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Class Selector */
+.intro {
+  font-style: italic;
+}
+
+/* Class Selector */
+.highlight {
+  background-color: #f0f8ff;
+  padding: 8px;
+}
+
+/* ID Selector */
+#header {
+  color: #2c3e50;
+  font-size: 32px;
+}
+
+/* Class Selector */
+.box {
+  border: 1px solid #ccc;
+  padding: 16px;
+}

@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model Examples</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+      }
+
+      /* Q1 */
+      .s1 {
+        width: 300px;
+        padding: 20px;
+        border: 10px solid green;
+      }
+
+      /* Q2 */
+      .s2 {
+        width: 200px;
+        background-color: blanchedalmond;
+      }
+
+      /* Q3 */
+      .s3 {
+        border: 2px solid red;
+      }
+
+      /* Q4 */
+      .s4 {
+        padding: 25px;
+        border: 2px solid black;
+      }
+
+      /* Q5 */
+      .s5 {
+        margin-left: 25px;
+        background-color: aqua;
+        border: 2px solid black;
+        padding: 10px;
+      }
+
+      /* Q6 */
+      .s6 {
+        width: 500px;
+        padding: 20px;
+        border: 5px solid black;
+        background-color: blue;
+        color: white;
+        box-sizing: border-box;
+      }
+
+      .s6 h3 {
+        background-color: bisque;
+        color: black;
+        padding: 10px;
+      }
+
+      .s6 p {
+        background-color: blueviolet;
+        padding: 15px;
+      }
+
+      /* Q7 */
+      .s7 {
+        height: 50px;
+        padding: 15px;
+        border: 5px solid red;
+        margin-bottom: 80px;
+      }
+
+      /* Q8 */
+      .s8 {
+        width: 300px;
+        padding: 20px;
+        border: 5px solid black;
+        margin: 10px;
+      }
+
+      /* Q9 */
+      .s9 {
+        width: 600px;
+        padding: 20px;
+        border: 2px solid black;
+        margin: 30px auto;
+        background-color: cadetblue;
+        color: white;
+        box-sizing: content-box;
+      }
+
+      /* Q10 */
+      .s10 {
+        width: 600px;
+        margin: 30px auto;
+        display: flex;
+        gap: 10px;
+      }
+
+      .s10 button {
+        flex: 1;
+        font-size: 18px;
+      }
+
+      .b1 {
+        padding: 10px;
+      }
+
+      .b2 {
+        padding: 20px;
+      }
+
+      .b3 {
+        padding: 30px;
+      }
+
+      /* Q11 */
+      .s11 {
+        width: 300px;
+        border: 2px solid black;
+        padding-top: 40px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        background-color: lightyellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>1. Set a width of 300px, padding of 20px, and a 10px green border.</h2>
+
+    <div class="s1">
+      <h3>Sample 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <hr />
+
+    <h2>2. Set the width of the div element to 200px.</h2>
+
+    <div class="s2">
+      <h3>Sample 2</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <hr />
+
+    <h2>3. Add a 2px solid red border to the div element.</h2>
+
+    <div class="s3">
+      <h3>Sample 3</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <hr />
+
+    <h2>4. Add 25px space between the border and content.</h2>
+
+    <div class="s4">
+      <h3>Sample 4</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <hr />
+
+    <h2>5. Add 25px space outside, to the left of the div.</h2>
+
+    <div class="s5">
+      <h3>Sample 5</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <hr />
+
+    <h2>6. Box Model Example</h2>
+
+    <div class="s6">
+      <h3>Sample 6</h3>
+      <p>
+        Width = 500px, Padding = 20px, Border = 5px, Box-sizing = border-box.
+      </p>
+
+      <h4>Total Width Formula</h4>
+
+      <p>
+        Total Width = Width + Left Padding + Right Padding + Left Border + Right
+        Border
+      </p>
+    </div>
+
+    <hr />
+
+    <h2>
+      7. Calculate the total height. A div has height:50px; padding:15px;
+      border:5px solid red.
+    </h2>
+
+    <div class="s7">Sample 7</div>
+
+    <h3>Answer : 90px</h3>
+
+    <hr />
+
+    <h2>
+      8. Compute total width. Width =300px<br />
+      Padding =20px<br />
+      Border =5px<br />
+      Margin =10px
+    </h2>
+
+    <div class="s8">
+      <h3>Sample 8</h3>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <h3>Answer : 300 + 20 + 20 + 5 + 5 + 10 + 10 = <b>370px</b></h3>
+
+    <hr />
+
+    <h2>9. Create a 600px wide content-box, centered using margin:auto.</h2>
+
+    <div class="s9">
+      <h3>Sample 9</h3>
+      <p>
+        This div is 600px wide, has 20px padding, a 2px border and is centered
+        using margin:auto.
+      </p>
+    </div>
+
+    <hr />
+
+    <h2>10. Equal-sized buttons with different padding.</h2>
+
+    <div class="s10">
+      <button class="b1">ONE</button>
+      <button class="b2">TWO</button>
+      <button class="b3">THREE</button>
+    </div>
+
+    <hr />
+
+    <h2>
+      11. Different padding on each side. Top 40px, Right 10px, Bottom 20px,
+      Left 50px
+    </h2>
+
+    <div class="s11">
+      <h3>Sample 11</h3>
+      <p>
+        Notice how the text moves down because of the top padding and shifts
+        right because of the left padding.
+      </p>
+    </div>
+  </body>
+</html>

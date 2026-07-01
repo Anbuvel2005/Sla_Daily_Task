@@ -1,0 +1,371 @@
+<!-- Task 1: Convert inline elements into block elements.
+
+ Create 5 `<span>` elements.* Use CSS to make each `<span>` appear on a new line.
+
+ Add:Width: 200px , Padding: 10px,Background color -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Span Example</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding-top: 80px;
+      }
+
+      header {
+        width: 100%;
+        height: 70px;
+        background: blue;
+        color: white;
+        text-align: center;
+        line-height: 70px;
+        font-size: 25px;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+
+      p {
+        padding: 10px;
+      }
+      .container {
+        width: 400px;
+        height: 250px;
+        border: 3px solid black;
+        background: lightgray;
+        position: relative;
+      }
+
+      .square {
+        width: 80px;
+        height: 80px;
+        background: blue;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .box1 {
+        background: red;
+      }
+
+      .box2 {
+        background: blue;
+        position: relative;
+        top: 30px;
+        left: 50px;
+      }
+
+      .box3 {
+        background: green;
+      }
+      ul {
+        list-style: none;
+        background-color: blue;
+        padding: 15px;
+      }
+
+      li {
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+      }
+
+      li:hover {
+        background-color: red;
+        cursor: pointer;
+      }
+      span {
+        display: block;
+        width: 200px;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Bootstrap</span>
+    <span>React</span>
+
+    <br />
+    <br />
+
+    <!-- Task 2: Display block elements in a single line.
+
+Create 5 <div> elements.Make them appear in one horizontal line.
+
+Give each div: Different background color, Padding , Margin
+
+--- -->
+
+    <div
+      style="
+        background-color: aqua;
+        padding: 20px;
+        margin: 10px;
+        display: inline;
+      "
+    >
+      one
+    </div>
+    <div
+      style="
+        background-color: red;
+        padding: 30px;
+        margin: 15px;
+        display: inline;
+      "
+    >
+      two
+    </div>
+    <div
+      style="
+        background-color: violet;
+        padding: 40px;
+        margin: 20px;
+        display: inline;
+      "
+    >
+      three
+    </div>
+    <div
+      style="
+        background-color: maroon;
+        padding: 50px;
+        margin: 25px;
+        display: inline;
+      "
+    >
+      four
+    </div>
+    <div
+      style="
+        background-color: black;
+        color: aliceblue;
+        padding: 60px;
+        margin: 30px;
+        display: inline;
+      "
+    >
+      five
+    </div>
+    <br />
+    <br />
+
+    <!-- Task 3:Create a simple product card layout.
+
+Create four cards containing:Product Name,Price,Buy Button
+
+Arrange them side by side.
+
+Each card should have:Width: 180px,Border,Padding,Margin -->
+
+    <div
+      style="
+        display: inline-block;
+        width: 180px;
+        border: 3px solid black;
+        padding: 15px;
+        margin: 50px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+      "
+    >
+      <h3>Messi Jersey</h3>
+      <p>Price: ₹200</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div
+      style="
+        display: inline-block;
+        width: 180px;
+        border: 3px solid black;
+        padding: 15px;
+        margin: 50px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+      "
+    >
+      <h3>Ronaldo Jersey</h3>
+      <p>Price: ₹300</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div
+      style="
+        display: inline-block;
+        width: 180px;
+        border: 3px solid black;
+        padding: 15px;
+        margin: 50px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+      "
+    >
+      <h3>Neymar Jersey</h3>
+      <p>Price: ₹500</p>
+      <button>Buy Now</button>
+    </div>
+
+    <div
+      style="
+        display: inline-block;
+        width: 180px;
+        border: 3px solid black;
+        padding: 15px;
+        margin: 20px;
+        background-color: blue;
+        color: white;
+        text-align: center;
+      "
+    >
+      <h3>Mbappe Jersey</h3>
+      <p>Price: ₹600</p>
+      <button>Buy Now</button>
+    </div>
+    <br />
+    <br />
+    <!-- 
+    Task 4: Create a horizontal menu.
+
+Menu Items: Home, About , Services, Gallery,Contact
+
+Display them horizontally with:Background color,Padding,Hover effect -->
+
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Services</li>
+      <li>Gallery</li>
+      <li>Contact</li>
+    </ul>
+    <br />
+    <br />
+    <!-- Task 5:Move an element from its original position.
+
+Create three boxes.Move the middle box: 30px down,50px right,
+
+Keep the other boxes unchanged. -->
+
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <br />
+    <br />
+
+    <!-- Task 6: Position one element inside another.
+
+Create:One large container 400px × 250px, One small square 80px × 80px inside it.
+
+Place the small square: Top-right corner -->
+
+    <div class="container">
+      <div class="square"></div>
+    </div>
+    <br />
+    <br />
+
+    <header>Header</header>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?< 2
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos voluptate,
+      pariatur similique rem quidem ipsa temporibus rerum deleniti nihil?<
+    </p>
+  </body>
+</html>

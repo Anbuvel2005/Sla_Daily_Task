@@ -1,0 +1,105 @@
+.container {
+  background-color: blue;
+  color: aliceblue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  background-color: brown;
+  height: 200px;
+  width: 200px;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.navbar1 {
+  background-color: aqua;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar1 img {
+  height: 50px;
+  width: 80px;
+  padding: 20px;
+}
+.menu {
+  flex: 1;
+}
+.menu nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.menu nav a:hover {
+  background-color: blanchedalmond;
+  cursor: pointer;
+}
+
+.flex-container {
+  background-color: chartreuse;
+  padding: 30px;
+  border: 2px solid black;
+  margin: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+.pricing-container {
+  background-color: red;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.plan {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  color: white;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.responsive {
+  display: flex;
+  min-height: 300px;
+}
+
+.sidebar {
+  flex: 0 0 250px;
+  background: blue;
+  color: white;
+  padding: 20px;
+}
+
+.main {
+  flex: 1;
+  background: lightgray;
+  padding: 20px;
+}

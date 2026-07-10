@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .hov {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+        transition: 2s;
+      }
+
+      .hov:hover {
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border: 2px solid black;
+      }
+      .grow {
+        background-color: red;
+        color: white;
+        height: 100px;
+        width: 100px;
+        transition: 0.5s;
+        margin-left: 100px;
+      }
+      .grow:hover {
+        transform: scale(1.2);
+      }
+      .three {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        color: white;
+        transition: 0.5s;
+      }
+
+      .three:hover {
+        height: 200px;
+        width: 200px;
+        background-color: aquamarine;
+        color: black;
+        font-size: 20px;
+        box-shadow: 0 0 20px blueviolet;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: blue;
+        color: white;
+        padding: 20px;
+      }
+
+      .para {
+        opacity: 0;
+        transition: 0.2s;
+      }
+
+      .box:hover .para {
+        opacity: 1;
+      }
+
+      .fonty h1 {
+        font-family: Arial;
+        font-size: 40px;
+      }
+
+      .fonty h3 {
+        font-family: Verdana;
+        font-size: 30px;
+      }
+
+      .fonty p {
+        font-family: "Times New Roman";
+        font-size: 18px;
+      }
+
+      .fonty button {
+        font-family: Courier New;
+        font-size: 16px;
+      }
+      .texts h2 {
+        font-weight: bold;
+      }
+
+      .texts p {
+        font-style: italic;
+      }
+
+      .texts h3 {
+        text-decoration: underline;
+      }
+      .responsive-box {
+        width: 80%;
+        max-width: 600px;
+        height: 100px;
+        background-color: skyblue;
+        border: 2px solid black;
+      }
+
+      .rem-text {
+        font-size: 1.5rem;
+      }
+
+      .vw-heading {
+        font-size: 5vw;
+        color: darkblue;
+      }
+
+      .media-box {
+        width: 200px;
+        height: 100px;
+        background-color: lightblue;
+        color: black;
+        text-align: center;
+        line-height: 100px;
+      }
+
+      @media (max-width: 768px) {
+        .media-box {
+          background-color: lightgreen;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3 style="background-color: maroon; color: aliceblue">
+      1.Basic Hover Color Change with Transition
+    </h3>
+
+    <div class="hov">
+      <p>hover color change</p>
+    </div>
+    <br />
+    <br />
+
+    <h3 style="background-color: maroon; color: aliceblue">
+      2.Make an element grow on hover using transform and transition.
+    </h3>
+
+    <div class="grow">
+      <p>Grow large</p>
+    </div>
+    <br />
+    <br />
+    <h3 style="background-color: maroon; color: aliceblue">
+      3.Change color, size, and shadow on hover.
+    </h3>
+    <div class="three">
+      <ul>
+        <li>color</li>
+        <li>size</li>
+        <li>hover</li>
+      </ul>
+    </div>
+    <br />
+    <br />
+    <h3 style="background-color: maroon; color: aliceblue">
+      4.Reveal content with opacity & transition.
+    </h3>
+    <div class="box">
+      <div class="hove">hover</div>
+      <div class="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <h3 style="background-color: maroon; color: aliceblue">
+      5.Fonts-Apply different font families and sizes in diffeerent tags
+    </h3>
+    <div class="fonty">
+      <h1>Welcome</h1>
+
+      <h3>CSS Fonts Example</h3>
+
+      <p>This is a paragraph with a different font and size.</p>
+
+      <button>Click Me</button>
+    </div>
+    <h3 style="background-color: maroon; color: aliceblue">
+      6.Text Styles-Use bold, italic, underline, etc.
+    </h3>
+
+    <div class="texts">
+      <h2>Bold Text</h2>
+
+      <p>Italic Text</p>
+
+      <h3>Underline Text</h3>
+    </div>
+
+    <h3 style="background-color: maroon; color: aliceblue">
+      7.Create a box that takes up 80% of the screen width but no more than
+      600px.
+    </h3>
+    <div class="responsive-box"></div>
+
+    <br />
+    <br />
+
+    <h3 style="background-color: maroon; color: aliceblue">
+      8.Set a paragraph's font size to 1.5rem and explain how it behaves on
+      different devices.
+    </h3>
+
+    <p class="rem-text">This paragraph uses 1.5rem font size.</p>
+
+    <br />
+    <br />
+
+    <h3 style="background-color: maroon; color: aliceblue">
+      9.Use vw to make a heading that scales with screen size.
+    </h3>
+
+    <h1 class="vw-heading">Responsive Heading</h1>
+
+    <br />
+    <br />
+
+    <h3 style="background-color: maroon; color: aliceblue">
+      10.Write a media query that changes background color below 768px.
+    </h3>
+
+    <div class="media-box">Resize the browser below 768px</div>
+  </body>
+</html>

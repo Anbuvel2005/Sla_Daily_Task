@@ -1,4 +1,4 @@
-/* ================= HEADER ================= */
+
 
 #header {
   display: flex;
@@ -39,7 +39,7 @@
   margin-left: 20px;
 }
 
-/* ================= HERO ================= */
+
 
 #hero {
   display: flex;
@@ -58,7 +58,7 @@
   margin-right: 50px;
 }
 
-/* ================= SIDEBAR ================= */
+
 
 #sidebar {
   width: 260px;
@@ -103,7 +103,7 @@
   width: 22px;
 }
 
-/* ================= COMPANY INFO ================= */
+
 
 .company-info {
   background: white;
@@ -151,7 +151,7 @@
   color: red;
 }
 
-/* ================= MAIN ================= */
+
 
 #main {
   display: flex;
@@ -159,7 +159,7 @@
   gap: 20px;
 }
 
-/* ================= PROFILE CARD ================= */
+
 
 .emp-details {
   display: flex;
@@ -206,7 +206,7 @@
   cursor: pointer;
 }
 
-/* ================= ANNOUNCEMENT CARD ================= */
+
 
 .announce {
   background: white;
@@ -263,14 +263,14 @@
   text-decoration: underline;
 }
 
-/* ================= ROW ================= */
+
 
 .row1 {
   display: flex;
   gap: 20px;
 }
 
-/* ================= LEAVE SECTION ================= */
+
 
 .parent-leave {
   width: 96%;
@@ -331,7 +331,7 @@ textarea {
   margin-top: 10px;
 }
 
-/* ================= TABLE ================= */
+
 
 .table {
   width: 96%;

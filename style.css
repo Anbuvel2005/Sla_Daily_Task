@@ -1,0 +1,414 @@
+/* ================= HEADER ================= */
+
+#header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-sec {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-sec h3 {
+  font-size: 40px;
+  margin: 0;
+  color: white;
+}
+
+.logo-sec p {
+  font-size: 20px;
+  margin: 0;
+  color: white;
+}
+
+.navigate {
+  margin-left: auto;
+}
+
+.navigate a {
+  text-decoration: none;
+  color: white;
+  margin-left: 15px;
+}
+
+.log {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+/* ================= HERO ================= */
+
+#hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.portal {
+  margin-left: 20px;
+}
+
+#hero img {
+  width: 350px;
+  height: 220px;
+  margin-right: 50px;
+}
+
+/* ================= SIDEBAR ================= */
+
+#sidebar {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.menus {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  background: darkblue;
+  border-radius: 10px;
+}
+
+.menus h3 {
+  color: white;
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+
+.menus li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menus li:hover {
+  background: royalblue;
+  padding-left: 10px;
+  transition: 0.3s;
+}
+
+.menus li i {
+  width: 22px;
+}
+
+/* ================= COMPANY INFO ================= */
+
+.company-info {
+  background: white;
+  color: black;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.company-info h3 {
+  color: black;
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.info i {
+  color: royalblue;
+  margin-top: 4px;
+}
+
+.info p,
+.info span {
+  margin: 0;
+  color: black;
+}
+
+.social {
+  margin-top: 20px;
+}
+
+.social a {
+  margin-right: 15px;
+}
+
+.social i {
+  color: royalblue;
+  font-size: 22px;
+}
+
+.social i:hover {
+  color: red;
+}
+
+/* ================= MAIN ================= */
+
+#main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ================= PROFILE CARD ================= */
+
+.emp-details {
+  display: flex;
+  gap: 25px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 460px;
+}
+
+.profile-img img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+}
+
+.details h3 {
+  margin: 0;
+  color: black;
+}
+
+.role {
+  color: royalblue;
+  margin: 5px 0 15px;
+}
+
+.details p {
+  margin: 10px 0;
+  color: black;
+}
+
+.details i {
+  width: 22px;
+  margin-right: 8px;
+}
+
+.details button {
+  margin-top: 18px;
+  padding: 10px 18px;
+  background: royalblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ================= ANNOUNCEMENT CARD ================= */
+
+.announce {
+  background: white;
+  width: 560px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.announce h2 {
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  color: royalblue;
+  border-bottom: 1px solid #ccc;
+}
+
+.announce h3 {
+  margin: 0;
+  color: black;
+}
+
+.announce p {
+  margin: 4px 0 0;
+  color: black;
+  line-height: 1.4;
+}
+
+.announce h3 i {
+  margin-right: 10px;
+}
+
+.d1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 15px 0;
+}
+
+.d1 div:last-child {
+  color: gray;
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.view {
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid #ccc;
+  color: royalblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.view:hover {
+  text-decoration: underline;
+}
+
+/* ================= ROW ================= */
+
+.row1 {
+  display: flex;
+  gap: 20px;
+}
+
+/* ================= LEAVE SECTION ================= */
+
+.parent-leave {
+  width: 96%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.leave {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.leave div {
+  display: flex;
+  flex-direction: column;
+}
+
+.leave label,
+.leave2 label {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.leave input,
+.leave select {
+  width: 170px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.leave2 {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.leave2 div {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 350px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+}
+
+#doc {
+  margin-top: 10px;
+}
+
+/* ================= TABLE ================= */
+
+.table {
+  width: 96%;
+  overflow-x: auto;
+  margin-top: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table caption {
+  text-align: left;
+  font-size: 22px;
+  font-weight: bold;
+  color: royalblue;
+  margin-bottom: 15px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.table th {
+  background: darkblue;
+  color: white;
+}
+
+.table tr:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.table tr:hover {
+  background: #eaf3ff;
+}
+
+#footer {
+  background: darkblue;
+  color: white;
+  padding: 25px 40px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-box {
+  flex: 1;
+}
+
+.footer-box h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-box p,
+.footer-box a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.footer-box a:hover {
+  color: lightblue;
+}
+
+.footer-box i {
+  margin-right: 8px;
+}

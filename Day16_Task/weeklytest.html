@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: #f4f4f4;
+      }
+
+      /* Navigation Bar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #0077b6;
+        padding: 15px 40px;
+      }
+
+      .logo {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin-left: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* Sections */
+      section {
+        padding: 30px;
+        margin: 20px;
+        background: white;
+        border-radius: 10px;
+      }
+
+      /* Customer Profile */
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .profile img {
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      /* Login */
+      .login {
+        width: 300px;
+        margin: auto;
+        padding: 20px;
+        background: #e3f2fd;
+        border-radius: 10px;
+      }
+
+      .login input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      .login button {
+        width: 100%;
+        padding: 10px;
+        background: green;
+        color: white;
+        border: none;
+      }
+
+      /* Profile Card */
+      .card {
+        width: 300px;
+        text-align: center;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        margin: auto;
+        transition: 0.5s;
+        box-shadow: 0 0 10px gray;
+      }
+
+      .card:hover {
+        transform: scale(1.1);
+      }
+
+      .card img {
+        width: 120px;
+        border-radius: 50%;
+      }
+
+      .badge {
+        background: gold;
+        padding: 5px 10px;
+        border-radius: 20px;
+      }
+
+      .card button {
+        margin-top: 10px;
+        padding: 10px 20px;
+      }
+
+      /* Dashboard */
+      .dashboard {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
+      }
+
+      .box {
+        background: #2196f3;
+        color: white;
+        padding: 30px;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      /* Company Table */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="background-color: maroon; color: white">
+      1.Customer Registration Form
+    </h2>
+
+    <form>
+      <label for="name">Customer Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br /><br />
+
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" required />
+      <br /><br />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <label>Gender:</label>
+
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+
+      <input type="radio" id="other" name="gender" value="Other" />
+      <label for="other">Other</label>
+
+      <br /><br />
+
+      <label for="city">City:</label>
+      <select id="city" name="city">
+        <option value="">--Select City--</option>
+        <option value="Chennai">Chennai</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="Hyderabad">Hyderabad</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Delhi">Delhi</option>
+      </select>
+
+      <br /><br />
+
+      <label>Services Required:</label><br />
+
+      <input type="checkbox" id="internet" name="service" value="Internet" />
+      <label for="internet">Internet</label><br />
+
+      <input type="checkbox" id="mobileService" name="service" value="Mobile" />
+      <label for="mobileService">Mobile</label><br />
+
+      <input type="checkbox" id="dth" name="service" value="DTH" />
+      <label for="dth">DTH</label><br />
+
+      <input type="checkbox" id="broadband" name="service" value="Broadband" />
+      <label for="broadband">Broadband</label>
+
+      <br /><br />
+
+      <label for="idproof">Upload ID Proof:</label>
+      <input type="file" id="idproof" name="idproof" />
+
+      <br /><br />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+    <br />
+    <br />
+
+    <h2 style="background-color: maroon; color: white">Customer Details</h2>
+
+    <table border="1" cellpadding="10">
+      <tr>
+        <th>Customer ID</th>
+        <th>Customer Name</th>
+        <th>City</th>
+        <th>Membership Type</th>
+        <th>Purchase Amount</th>
+      </tr>
+
+      <tr>
+        <td>C101</td>
+        <td>Anbu</td>
+        <td>Chennai</td>
+        <td>Gold</td>
+        <td style="background-color: yellow">₹60,000</td>
+      </tr>
+
+      <tr>
+        <td>C102</td>
+        <td>Rahul</td>
+        <td>Bangalore</td>
+        <td>Silver</td>
+        <td>₹45,000</td>
+      </tr>
+
+      <tr>
+        <td>C103</td>
+        <td>Priya</td>
+        <td>Hyderabad</td>
+        <td>Gold</td>
+        <td style="background-color: yellow">₹75,000</td>
+      </tr>
+
+      <tr>
+        <td>C104</td>
+        <td>Karthik</td>
+        <td>Mumbai</td>
+        <td>Platinum</td>
+        <td style="background-color: yellow">₹90,000</td>
+      </tr>
+
+      <tr>
+        <td>C105</td>
+        <td>Divya</td>
+        <td>Coimbatore</td>
+        <td>Silver</td>
+        <td>₹35,000</td>
+      </tr>
+
+      <tr>
+        <td>C106</td>
+        <td>Arun</td>
+        <td>Madurai</td>
+        <td>Gold</td>
+        <td style="background-color: yellow">₹55,000</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <h1 style="background-color: maroon; color: white">
+      3.Customer Relationship Management (CRM)
+    </h1>
+
+    <p>
+      Customer Relationship Management (CRM) is a system used by businesses to
+      manage customer information, improve customer service, track sales, and
+      build strong customer relationships.
+    </p>
+
+    <h3>CRM Features</h3>
+
+    <ol>
+      <li>Customer Data Management</li>
+      <li>Lead Management</li>
+      <li>Sales Tracking</li>
+      <li>Customer Support</li>
+      <li>Reporting and Analytics</li>
+    </ol>
+
+    <h3>CRM Software</h3>
+
+    <ul>
+      <li>Salesforce</li>
+      <li>Zoho CRM</li>
+      <li>HubSpot CRM</li>
+      <li>Microsoft Dynamics 365</li>
+      <li>Freshsales</li>
+    </ul>
+    <br />
+    <br />
+    <nav>
+      <div class="logo">CRM Portal</div>
+
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h2>Customer Profile</h2>
+
+      <div class="profile">
+        <img src="./profile.png" alt="Customer" />
+
+        <div>
+          <h3>Anbu Vel</h3>
+          <p>
+            Email :
+            <a href="mailto:anbu@gmail.com">anbu@gmail.com</a>
+          </p>
+
+          <p>
+            Phone :
+            <a href="tel:9876543210">9876543210</a>
+          </p>
+
+          <p>Address : Chennai, Tamil Nadu</p>
+
+          <p>Membership : Gold</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <img src="./Screenshot 2026-07-09 215625.png" alt="Logo" />
+
+      <h2>ABC Company</h2>
+
+      <p>ABC Company provides customer management services for businesses.</p>
+
+      <p>Our CRM system helps improve customer satisfaction and sales.</p>
+
+      <h3>Ordered List</h3>
+
+      <ol>
+        <li>Register</li>
+        <li>Login</li>
+        <li>Manage Customers</li>
+        <li>View Reports</li>
+        <li>Logout</li>
+      </ol>
+
+      <h3>Unordered List</h3>
+
+      <ul>
+        <li>CRM</li>
+        <li>ERP</li>
+        <li>Billing</li>
+        <li>Support</li>
+        <li>Marketing</li>
+      </ul>
+
+      <h3>Customer Table</h3>
+
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>City</th>
+        </tr>
+
+        <tr>
+          <td>101</td>
+          <td>Anbu</td>
+          <td>Chennai</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Rahul</td>
+          <td>Bangalore</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Priya</td>
+          <td>Hyderabad</td>
+        </tr>
+        <tr>
+          <td>104</td>
+          <td>Arun</td>
+          <td>Mumbai</td>
+        </tr>
+        <tr>
+          <td>105</td>
+          <td>Divya</td>
+          <td>Delhi</td>
+        </tr>
+        <tr>
+          <td>106</td>
+          <td>Kumar</td>
+          <td>Coimbatore</td>
+        </tr>
+      </table>
+
+      <br />
+
+      <img src="./profile.png" alt="Customer" />
+
+      <br /><br />
+
+      <a href="#">Contact Us</a>
+    </section>
+
+    <section>
+      <h2>Customer Login</h2>
+
+      <div class="login">
+        <input type="text" placeholder="Username" />
+
+        <input type="password" placeholder="Password" />
+
+        <button>Login</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Customer Profile Card</h2>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/120" />
+
+        <h3>Anbu Vel</h3>
+
+        <p class="badge">Gold Member</p>
+
+        <p>Chennai</p>
+
+        <button>Contact</button>
+      </div>
+    </section>
+
+    <section>
+      <h2>Customer Dashboard</h2>
+
+      <div class="dashboard">
+        <div class="box">Total Customers</div>
+
+        <div class="box">New Customers</div>
+
+        <div class="box">Active Customers</div>
+
+        <div class="box">Premium Members</div>
+
+        <div class="box">Orders</div>
+
+        <div class="box">Revenue</div>
+
+        <div class="box">Feedback</div>
+
+        <div class="box">Support Tickets</div>
+      </div>
+    </section>
+  </body>
+</html>

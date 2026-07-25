@@ -61,6 +61,10 @@
 // }
 // evenSeries();
 
+
+
+
+
 // function evenSeries(a, b) {
 //   let s = "";
 //   for (let i = a; i <= b; i += 2) {
@@ -423,22 +427,7 @@
 // }
 // console.log(primeSeries(50));
 
-// function armstrong() {
-//   let n = 153;
-//   let temp = n;
-//   let sum = 0;
-//   let r;
 
-//   while (temp > 0) {
-//     r = temp % 10;
-//     sum += r * r * r;
-//     temp = parseInt(temp / 10);
-//   }
-
-//   if (sum == n) console.log("Armstrong");
-//   else console.log("Not Armstrong");
-// }
-// armstrong();
 
 // function armstrong(n) {
 //   let temp = n;

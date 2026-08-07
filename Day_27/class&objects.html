@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //1. Create a `Student` class with properties `name`, `age`, and `course`.
+      //Create an object and display the details.
+      /*  class Student {
+        constructor(name, age, course) {
+          this.name = name;
+          this.age = age;
+          this.course = course;
+        }
+      }
+
+      let student1 = new Student("anbu", 21, "ECE");
+      console.log(student1.name);
+      console.log(student1.age);
+      console.log(student1.course);*/
+
+      //2. Create an `Employee` class with properties `id`, `name`, and `salary`. Add a method to display the employee details.
+
+      /* class Employee {
+        constructor(id, name, salary) {
+          this.id = id;
+          this.name = name;
+          this.salary = salary;
+        }
+
+        display() {
+          console.log(this.id);
+          console.log(this.name);
+          console.log(this.salary);
+        }
+      }
+
+      let employee = new Employee(1001, "Anbu", 20000);
+      employee.display();*/
+      // 3. Create a `Rectangle` class with properties `length` and `width`. Add a method to calculate the area of the rectangle.
+
+      /* class Rectangle {
+        constructor(length, width) {
+          this.length = length;
+          this.width = width;
+        }
+
+        method() {
+          let res = this.length * this.width;
+          console.log(res);
+        }
+      }
+
+      let rect = new Rectangle(2, 3);
+      console.log(rect.length);
+      console.log(rect.width);
+      rect.method();*/
+
+      // . Create a `Circle` class with a property `radius`. Add a method to calculate the circumference of the circle.
+      /* class circle {
+        constructor(radius) {
+          this.radius = radius;
+        }
+
+        circumference() {
+          let res = 2 * 3.14 * this.radius;
+          console.log(res);
+        }
+      }
+
+      let circum = new circle(3);
+      circum.circumference();*/ //5. Create a `BankAccount` class with properties `accountNumber` and `balance`. Add methods for deposit ,withdrawaland MiniStatement.
+
+      /*  class BankAccount {
+        constructor(accountNumber, balance) {
+          this.accountNumber = accountNumber;
+          this.balance = balance;
+        }
+
+        deposit(amount) {
+          this.balance += amount;
+          console.log("deposit" + this.balance);
+        }
+
+        withdrawal(amount) {
+          if (amount <= this.balance) {
+            this.balance -= amount;
+            console.log("withdrawn" + amount);
+          } else {
+            console.log("Insufficient balance");
+          }
+        }
+
+        MiniStatement() {
+          console.log("AccountNumber" + this.accountNumber);
+          console.log("Balance" + this.balance);
+        }
+      }
+
+      let bankacc = new BankAccount(12345678, 6000);
+      bankacc.deposit(1000);
+      bankacc.withdrawal(2000);
+      bankacc.MiniStatement();*/ // Create a `Car` class with properties `brand`, `model`, and `year`. Add a method to display the car details.
+
+      /* class Car {
+        constructor(brand, model, year) {
+          this.brand = brand;
+          this.model = model;
+          this.year = year;
+        }
+
+        display() {
+          console.log("brand :" + this.brand);
+          console.log("model :" + this.model);
+          console.log("year :" + this.year);
+        }
+      }
+
+      let car = new Car("bmw", "3series", 2018);
+      car.display();*/
+
+      //7. Create a `Person` class and inherit an `Employee` class from it. Display the details of both classes.
+
+      /* class person {
+        constructor(name, age, role) {
+          this.name = name;
+          this.age = age;
+          this.role = role;
+        }
+        disPerson() {
+          console.log(`Name: ${this.name}`);
+          console.log(`age: ${this.age}`);
+          console.log(`role: ${this.role}`);
+        }
+      }
+
+      class employee extends person {
+        constructor(name, age, role, salary, experience) {
+          super(name, age, role);
+          this.salary = salary;
+          this.experience = experience;
+        }
+
+        disemployee() {
+          this.disPerson();
+          console.log("salary: " + this.salary);
+          console.log("experience: " + this.experience);
+        }
+      }
+
+      let details = new employee("anbu", 21, "dev", 300000, 5);
+      details.disemployee();*/
+
+      //  8. Create an `Animal` class with a method `sound()`. Create `Dog` and `Cat` classes that override the `sound()`method.
+
+      /* class Animal {
+        sound() {
+          console.log("Animal makes a sound");
+        }
+      }
+
+      class Dog extends Animal {
+        sound() {
+          console.log("dog barks");
+        }
+      }
+
+      class Cat extends Animal {
+        sound() {
+          console.log("cat meow");
+        }
+      }
+
+      const dog = new Dog();
+      const cat = new Cat();
+
+      dog.sound();
+      cat.sound();*/
+
+      //9. Create a `Book` class with properties `title`, `author`, and `price`. Add a method to display the book information.
+
+      /* class Book {
+        constructor(title, author, price) {
+          this.title = title;
+          this.author = author;
+          this.price = price;
+        }
+
+        method() {
+          console.log("title: " + this.title);
+          console.log("author: " + this.author);
+          console.log("price: " + this.price);
+        }
+      }
+
+      let book = new Book("crime", "david", 2000);
+      book.method();*/
+
+      // 10. Create a `Calculator` class with methods for addition, subtraction, multiplication, and division. Create an object and perform all operations.
+
+      class Calculator {
+        add(a, b) {
+          console.log("Addition = " + (a + b));
+        }
+
+        subtract(a, b) {
+          console.log("Subtraction = " + (a - b));
+        }
+
+        multiply(a, b) {
+          console.log("Multiplication = " + a * b);
+        }
+
+        divide(a, b) {
+          if (b !== 0) {
+            console.log("Division = " + a / b);
+          } else {
+            console.log("Cannot divide by zero");
+          }
+        }
+      }
+
+      const calc = new Calculator();
+
+      calc.add(10, 5);
+      calc.subtract(10, 5);
+      calc.multiply(10, 5);
+      calc.divide(10, 5);
+    </script>
+  </body>
+</html>

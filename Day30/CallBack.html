@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Write a program to create a calculate() function that accepts two numbers
+      //and a callback function. Use the callback to perform addition.
+
+      /*  function calculate(a, b, callback) {
+        return callback(a, b);
+      }
+
+      function add(x, y) {
+        return x + y;
+      }
+
+      let result = calculate(10, 20, add);
+      console.log(result);*/
+
+      //Write a program to create a greetUser() function that accepts a name and a callback function. The callback should display a welcome message.
+      /* function greetUser(name, callback) {
+        return callback(name);
+      }
+
+      function greet(some) {
+        return some;
+      }
+
+      let res = greetUser("Anbu", greet);
+      console.log(res);*/
+
+      // Write a program to create a processArray() function that accepts an array and a callback function. Use the callback to double each element.
+
+      /* function processArray(arr, callback) {
+        return callback(arr);
+      }
+
+      function double(some) {
+        return some.map((num) => {
+          return num * 2;
+        });
+      }
+
+      let res = processArray([1, 2, 3, 4, 5], double);
+      console.log(res);*/
+
+      //  Write a program to create a filterNumbers() function that accepts an array and a callback function. Use the callback to return only positive numbers.
+
+      /* function filterNumbers(arr, callback) {
+        return callback(arr);
+      }
+
+      function positive(some) {
+        return some.filter((num) => {
+          return num > 0;
+        });
+      }
+
+      let pos = filterNumbers([3, -4, 5, -2, 7], positive);
+      console.log(pos);*/
+
+      //Write a program to create a findNumber() function that accepts an array and a callback function. Use the callback to //find the first even number.
+
+      /*function findNumber(arr, callback) {
+        return callback(arr);
+      }
+
+      function feven(some) {
+        return some.find((num) => {
+          if (num % 2 == 0) {
+            return num;
+          }
+        });
+      }
+
+      let res = findNumber([1, 2, 5, 6, 8], feven);
+      console.log(res);*/
+
+      //Write a program to create a removeNegative() function that accepts an array and a callback function. Use the callback to remove all negative values.
+
+      /* function removeNegative(arr, callback) {
+        return callback(arr);
+      }
+
+      function remNeg(some) {
+        return some.filter((num) => {
+          return num > 0;
+        });
+      }
+
+      let res = removeNegative([12, 12, 3, 4, -5], remNeg);
+      console.log(res);*/
+
+      //Write a program to create a checkEligibility() function that accepts an age and a callback function. Display whether the person is eligible to vote.
+
+      /* function checkEligibility(age, callback) {
+        return callback(age);
+      }
+
+      function eligible(some) {
+        if (some > 18) {
+          return "eligible to vote";
+        } else {
+          return "not eligible";
+        }
+      }
+
+      let res = checkEligibility(17, eligible);
+      console.log(res);*/
+
+      //Write a program to create an orderFood() function that uses setTimeout() and a callback function to display "Food is ready" after 3 seconds.
+
+      /* function orderFood(callback) {
+        console.log("ordering food...................");
+
+        setTimeout(function () {
+          return callback();
+        }, 3000);
+      }
+
+      function foodready() {
+        console.log("food is ready.....");
+      }
+
+      orderFood(foodready);*/
+
+      //Write a program to create a sumArray() function that accepts an array and a callback function. Use the callback to calculate the total sum of all elements.
+
+      /*  function sumArray(arr, callback) {
+        return callback(arr);
+      }
+
+      function arr(some) {
+        return some.reduce((total, num) => total + num, 0);
+      }
+
+      let res = sumArray([12, 23, 45, 67, 56], arr);
+      console.log(res);*/
+
+      // Write a program to create a sortArray() function that accepts an array and a callback function. Use the callback to sort the array in ascending order.
+
+      /*function sortArray(arr, callback) {
+        return callback(arr);
+      }
+
+      function arr(some) {
+        return some.sort((a, b) => a - b);
+      }
+
+      let res = sortArray([40, 10, 30, 20, 50], arr);
+      console.log(res);*/
+    </script>
+  </body>
+</html>

@@ -1,14 +1,14 @@
 // //12.factorial of a given no // 5!=5*4*3*2*1 =120
 
-// // let num = prompt("enter the num:");
-// // console.log(num);
+// let num = prompt("enter the num:");
+// console.log(num);
 
-// // let f = 1;
-// // for (let i = num; i >= 1; i--) {
-// //   f = f * i;
-// // }
+// let f = 1;
+// for (let i = num; i >= 1; i--) {
+//   f = f * i;
+// }
 
-// // console.log(f);
+// console.log(f);
 
 // //13.find out the given no is prime or not
 
@@ -144,7 +144,6 @@
 // // } else {
 // //     console.log("Not a Palindrome");
 // // }
-
 
 // // 12. Factorial - While
 
@@ -373,5 +372,3 @@
 //   console.log("Palindrome");
 // else
 //   console.log("Not Palindrome");
-
-

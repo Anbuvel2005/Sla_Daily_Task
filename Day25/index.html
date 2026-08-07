@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Basic Tasks</title>
+  </head>
+  <body>
+    <h2>Task 1</h2>
+    <h1 id="heading">Welcome</h1>
+    <button onclick="changeHeading()">Change Heading</button>
+
+    <hr />
+
+    <h2>Task 2</h2>
+    <p id="para">This is a paragraph.</p>
+    <button onclick="changeParagraph()">Change Paragraph Style</button>
+
+    <hr />
+
+    <h2>Task 3</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Paragraph 4</p>
+    <button onclick="changeAllParagraphs()">Change All Paragraph Colors</button>
+
+    <hr />
+
+    <h2>Task 4</h2>
+    <ul>
+      <li>Apple</li>
+      <li>Mango</li>
+      <li>Orange</li>
+      <li>Banana</li>
+      <li>Grapes</li>
+    </ul>
+    <button onclick="countItems()">Count List Items</button>
+    <p id="result"></p>
+
+    <hr />
+
+    <h2>Task 5</h2>
+    <p class="demo">Class Paragraph 1</p>
+    <p class="demo">Class Paragraph 2</p>
+    <p class="demo">Class Paragraph 3</p>
+    <button onclick="changeBackground()">Change Background</button>
+
+    <hr />
+
+    <h2>Task 6</h2>
+    <button class="btn">Button 1</button>
+    <button class="btn">Button 2</button>
+    <button class="btn">Button 3</button>
+    <button class="btn">Button 4</button>
+    <br /><br />
+    <button onclick="disableButtons()">Disable All Buttons</button>
+
+    <hr />
+
+    <h2>Task 7</h2>
+    <h1 id="title">Original Heading</h1>
+    <button onclick="changeTitle()">Change Title</button>
+
+    <hr />
+
+    <h2>Task 8</h2>
+    <p class="item">Item 1</p>
+    <p class="item">Item 2</p>
+    <p class="item">Item 3</p>
+    <p class="item">Item 4</p>
+    <p class="item">Item 5</p>
+    <button onclick="changeItems()">Change Items Style</button>
+
+    <script>
+      function changeHeading() {
+        document.getElementById("heading").innerHTML = "Hello JavaScript DOM!";
+      }
+
+      function changeParagraph() {
+        let p = document.getElementById("para");
+        p.style.color = "blue";
+        p.style.fontSize = "30px";
+      }
+
+      function changeAllParagraphs() {
+        let p = document.getElementsByTagName("p");
+        for (let i = 0; i < p.length; i++) {
+          p[i].style.color = "green";
+        }
+      }
+
+      function countItems() {
+        let items = document.getElementsByTagName("li");
+        document.getElementById("result").innerHTML =
+          "Total List Items: " + items.length;
+      }
+
+      function changeBackground() {
+        let demo = document.getElementsByClassName("demo");
+        for (let i = 0; i < demo.length; i++) {
+          demo[i].style.backgroundColor = "yellow";
+        }
+      }
+
+      function disableButtons() {
+        let btn = document.getElementsByClassName("btn");
+        for (let i = 0; i < btn.length; i++) {
+          btn[i].disabled = true;
+        }
+      }
+
+      function changeTitle() {
+        document.querySelector("#title").innerHTML = "Heading Changed!";
+      }
+
+      function changeItems() {
+        let items = document.querySelectorAll(".item");
+        for (let i = 0; i < items.length; i++) {
+          items[i].style.color = "red";
+          items[i].style.fontStyle = "italic";
+        }
+      }
+    </script>
+  </body>
+</html>

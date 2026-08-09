@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Destructuring Tasks 1. Create an array with five numbers and use array
+      //destructuring to store the first two numbers in separate variables.
+      // let arr = [10, 20, 30, 40, 50];
+      //[a, b] = arr;
+      //console.log(a, b);
+
+      //2. Create an array of colors and use the rest operator to store the remaining colors in another array.
+
+      /* let colors = ["red", "blue", "green"];
+       [firstColor, ...args] = colors;
+       console.log(args);
+       console.log(firstColor);*/
+
+      //3. Create an object with properties `name`, `age`, and `city`. Use object destructuring to extract all values.
+
+      /*let obj = {
+         name: "Anbu",
+         age: 21,
+         city: "chennai",
+       };
+
+       let { name, age, city } = obj;
+       console.log(name);
+       console.log(age);
+       console.log(city);*/
+
+      //   4. Create an object containing student details and rename the `name` property to `studentName` using destructuring.
+
+      /* let obj = {
+         name: "Anbu",
+         age: 21,
+         grade: "A",
+       };
+
+       let { name: StudentName } = obj;
+       console.log(StudentName);*/
+
+      // 5. Create two arrays and merge them into a single array using the spread operator.
+
+      /* let arr1 = [10, 20];
+      let arr2 = [30, 40, 50];
+      let arr3 = [...arr1, ...arr2];
+      console.log(arr3);*/
+
+      //6. Create an array and add two new elements at the beginning and end using the spread operator
+
+      /*let arr = [20, 30, 40];
+
+      let newArr = [10, ...arr, 50];
+
+      console.log(newArr);
+
+      let person = {
+        name: "Anbu",
+        age: 21,
+      };
+
+      let newPerson = {
+        ...person,
+        city: "Chennai",
+      };
+
+      console.log(newPerson);
+
+      //8. Create a function that accepts any number of arguments and returns their sum using the rest operator.
+
+      function sum(...numbers) {
+        let total;
+
+        for (let num of numbers) {
+          total = total + num;
+        }
+
+        return total;
+      }
+      console.log(sum(10, 20, 30, 40));*/
+
+      //9. Create a function that accepts a name as the first argument and stores all remaining arguments in an array using the rest operator.
+
+      function student(name, ...subjects) {
+        console.log(name);
+        console.log(subjects);
+      }
+
+      student("Anbu", "Java", "JavaScript", "SQL");
+
+      let numbers = [10, 20, 30, 40, 50, 60];
+
+      let [first, ...remaining] = numbers;
+
+      console.log(first);
+      console.log(remaining);
+    </script>
+  </body>
+</html>

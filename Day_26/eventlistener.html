@@ -1,0 +1,146 @@
+```html
+<!doctype html>
+<html>
+  <head>
+    <title>JavaScript DOM Events</title>
+
+    <style>
+      div {
+        width: 200px;
+        height: 100px;
+        background-color: lightgray;
+        margin: 10px 0;
+        padding: 20px;
+      }
+
+      input {
+        margin: 5px;
+        padding: 8px;
+      }
+
+      button {
+        margin: 5px;
+        padding: 8px 15px;
+      }
+
+      img {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>JavaScript DOM Events</h1>
+
+    <h2>1. Button Click</h2>
+    <button onclick="sayHello()">Click Me</button>
+    <p id="hello"></p>
+
+    <h2>2. Change Text Color</h2>
+    <p id="colorText">This paragraph will change color.</p>
+    <button onclick="changeColor()">Change Color</button>
+
+    <h2>3. Show Input Value</h2>
+    <input type="text" id="textInput" placeholder="Enter text" />
+    <button onclick="showText()">Show Text</button>
+    <p id="displayText"></p>
+
+    <h2>4. Count Clicks</h2>
+    <button onclick="countClicks()">Click Count</button>
+    <p id="count">Clicks: 0</p>
+
+    <h2>5. Mouse Hover</h2>
+    <div id="box" onmouseover="changeBackground()">Move your mouse here</div>
+
+    <h2>6. Double-Click Event</h2>
+    <button ondblclick="doubleClick()">Double Click Me</button>
+
+    <h2>7. Keyboard Event</h2>
+    <input
+      type="text"
+      id="keyInput"
+      onkeydown="showKey(event)"
+      placeholder="Press a key"
+    />
+    <p id="keyOutput"></p>
+
+    <h2>8. Hide and Show Text</h2>
+    <p id="hideText">This text can be hidden and shown.</p>
+    <button onclick="hideShow()">Hide / Show</button>
+
+    <h2>9. Change Image</h2>
+    <img id="myImage" src="https://picsum.photos/200/150?random=1" />
+    <br />
+    <button onclick="changeImage()">Change Image</button>
+
+    <h2>10. Focus and Blur</h2>
+    <input
+      type="text"
+      id="focusInput"
+      onfocus="focusInput()"
+      onblur="blurInput()"
+      placeholder="Click here"
+    />
+
+    <script>
+      function sayHello() {
+        document.getElementById("hello").innerText = "Hello, World!";
+      }
+
+      function changeColor() {
+        document.getElementById("colorText").style.color = "red";
+      }
+
+      function showText() {
+        let text = document.getElementById("textInput").value;
+        document.getElementById("displayText").innerText = text;
+      }
+
+      let clicks = 0;
+
+      function countClicks() {
+        clicks++;
+        document.getElementById("count").innerText = "Clicks: " + clicks;
+      }
+
+      function changeBackground() {
+        document.getElementById("box").style.backgroundColor = "yellow";
+      }
+
+      function doubleClick() {
+        alert("Button was double-clicked!");
+      }
+
+      function showKey(event) {
+        document.getElementById("keyOutput").innerText =
+          "Key pressed: " + event.key;
+      }
+
+      function hideShow() {
+        let text = document.getElementById("hideText");
+
+        if (text.style.display === "none") {
+          text.style.display = "block";
+        } else {
+          text.style.display = "none";
+        }
+      }
+
+      function changeImage() {
+        document.getElementById("myImage").src =
+          "https://picsum.photos/200/150?random=2";
+      }
+
+      function focusInput() {
+        document.getElementById("focusInput").style.border = "3px solid blue";
+      }
+
+      function blurInput() {
+        document.getElementById("focusInput").style.border = "1px solid black";
+      }
+    </script>
+  </body>
+</html>
+```

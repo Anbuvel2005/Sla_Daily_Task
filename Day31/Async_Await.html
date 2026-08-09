@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1. Wait for 2 seconds
+
+      //Create a function that waits for 2 seconds and then prints `"Task completed"`.
+
+      /* function task() {
+                                 return new Promise((resolve) => {
+                                   setTimeout(() => {
+                                     console.log("Task completed");
+                                     resolve("Promise Finished");
+                                   }, 2000);
+                                 });
+                               }
+
+                               async function taskCo() {
+                                 let res = await task();
+                                 console.log(res);
+                               }
+
+                               taskCo();*/
+
+      //2. Fetch user data
+
+      //Create an async function that returns a user's name after 3 seconds.
+
+      /*function task() {
+                                 return new Promise((resolve) => {
+                                   setTimeout(() => {
+                                     console.log("Anbu");
+                                     resolve("promise finished");
+                                   }, 3000);
+                                 });
+                               }
+
+                               async function asey() {
+                                 let res = await task();
+                                 console.log(res);
+                               }
+
+                               asey();*/
+
+      //  3. Addition with delay
+
+      // Create an async function that adds two numbers after a 1-second delay.
+
+      /*  function main1() {
+                          return new Promise((resolve) => {
+                            setTimeout(() => {
+                              let a = 10;
+                              let b = 20;
+
+                              resolve(a + b);
+                            }, 1000);
+                          });
+                        }
+
+                        async function add() {
+                          let res = await main1();
+                          console.log(res);
+                        }
+                        add();*/
+
+      //    4. Sequential execution
+
+      // Create three async functions (`task1`, `task2`, `task3`) and execute them one after another.
+
+      /* function task1() {
+                    return new Promise((resolve) => {
+                      setTimeout(() => {
+                        console.log("Task 1 completed");
+                        resolve();
+                      }, 1000);
+                    });
+                  }
+
+                  function task2() {
+                    return new Promise((resolve) => {
+                      setTimeout(() => {
+                        console.log("Task 2 completed");
+                        resolve();
+                      }, 1000);
+                    });
+                  }
+
+                  function task3() {
+                    return new Promise((resolve) => {
+                      setTimeout(() => {
+                        console.log("Task 3 completed");
+                        resolve();
+                      }, 1000);
+                    });
+                  }
+
+                  async function main() {
+                    await task1();
+                    await task2();
+                    await task3();
+                  }
+
+                  main();*/
+
+      /*    5. Order food
+
+            Create an async function that simulates ordering food and displays:
+
+            "Order placed"
+
+            "Food is ready"
+
+            "Enjoy your meal"*/
+
+      /*  function order() {
+              return new Promise((resolve) => {
+                console.log("welcome");
+
+                setTimeout(() => {
+                  resolve("orderplaced");
+                }, 1000);
+              });
+            }
+
+            function ready() {
+              return new Promise((resolve) => {
+                console.log("loading");
+
+                setTimeout(() => {
+                  resolve("foodready");
+                }, 1000);
+              });
+            }
+
+            function Enjoy() {
+              return new Promise((resolve) => {
+                console.log("loading");
+
+                setTimeout(() => {
+                  resolve("Enjoy your meal");
+                }, 1000);
+              });
+            }
+
+            async function sim() {
+              let res1 = await order();
+              console.log(res1);
+
+              let res2 = await ready();
+              console.log(res2);
+
+              let res3 = await Enjoy();
+              console.log(res3);
+            }
+
+            sim();/*
+
+            function download() {
+        return new Promise((resolve) => {
+          console.log("Downloading...");
+
+          setTimeout(() => {
+            resolve("Download completed");
+          }, 2000);
+        });
+      }
+
+      async function startDownload() {
+        let res = await download();
+        console.log(res);
+      }
+
+      startDownload();
+
+
+      function checkNumber(num) {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            if (num % 2 === 0) {
+              resolve("Even");
+            } else {
+              resolve("Odd");
+            }
+          }, 1000);
+        });
+      }
+      async function check() {
+        let res = await checkNumber(10);
+        console.log(res);
+      }
+
+      check();
+*/
+      /*   async function test() {
+        try {
+          throw new Error("Something went wrong");
+        } catch (error) {
+          console.log(error.message);
+        }
+      }
+
+      test();
+
+      function task1() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Task 1 completed");
+    }, 1000);
+  });
+}
+
+function task2() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Task 2 completed");
+    }, 2000);
+  });
+}
+
+function task3() {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Task 3 completed");
+    }, 3000);
+  });
+}
+
+async function main() {
+  let res1 = await task1();
+  console.log(res1);
+
+  let res2 = await task2();
+  console.log(res2);
+
+  let res3 = await task3();
+  console.log(res3);
+}
+
+main();*/
+
+      function studentResult(mark) {
+        if (mark > 35) {
+          return "Pass";
+        } else {
+          return "Fail";
+        }
+      }
+
+      async function checkResult() {
+        let res = await studentResult(50);
+        console.log(res);
+      }
+
+      checkResult();
+    </script>
+  </body>
+</html>

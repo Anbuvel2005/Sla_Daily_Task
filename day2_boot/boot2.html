@@ -1,0 +1,224 @@
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Services Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- ================= Navbar ================= -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"> Anbu Services </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"> Home </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#services"> Services </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= Alert ================= -->
+
+    <div class="container mt-4">
+      <div class="alert alert-success alert-dismissible fade show">
+        Welcome! Check out our services.
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+        ></button>
+      </div>
+    </div>
+
+    <!-- ================= Buttons ================= -->
+
+    <div class="container text-center my-4">
+      <button class="btn btn-primary">Primary Button</button>
+
+      <button class="btn btn-success">Success Button</button>
+
+      <button class="btn btn-outline-success">Outline Success</button>
+
+      <button class="btn btn-danger">Delete</button>
+    </div>
+
+    <!-- ================= Services Cards ================= -->
+
+    <section id="services" class="container my-5">
+      <h1 class="text-center text-primary mb-4">Our Services</h1>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/400/250?random=1"
+              class="card-img-top"
+              alt="Web Development"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Web Development</h5>
+
+              <p class="card-text">
+                We create modern and responsive websites for businesses and
+                individuals.
+              </p>
+
+              <button class="btn btn-primary">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/400/250?random=2"
+              class="card-img-top"
+              alt="App Development"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">App Development</h5>
+
+              <p class="card-text">
+                We build user-friendly applications with modern technologies.
+              </p>
+
+              <button class="btn btn-outline-success">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100">
+            <img
+              src="https://picsum.photos/400/250?random=3"
+              class="card-img-top"
+              alt="Digital Marketing"
+            />
+
+            <div class="card-body">
+              <h5 class="card-title">Digital Marketing</h5>
+
+              <p class="card-text">
+                We help businesses improve their online presence and reach more
+                customers.
+              </p>
+
+              <button class="btn btn-danger">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Contact Form ================= -->
+
+    <section id="contact" class="container my-5">
+      <h2 class="text-center text-primary mb-4">Contact Us</h2>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <form class="border p-4 rounded">
+            <!-- Name -->
+
+            <div class="mb-3">
+              <label for="name" class="form-label"> Name </label>
+
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <!-- Email -->
+
+            <div class="mb-3">
+              <label for="email" class="form-label"> Email </label>
+
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <!-- Message -->
+
+            <div class="mb-3">
+              <label for="message" class="form-label"> Message </label>
+
+              <textarea
+                id="message"
+                class="form-control"
+                rows="4"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+
+            <button type="submit" class="btn btn-primary w-100">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Footer ================= -->
+
+    <footer class="bg-dark text-white text-center p-3">
+      <p class="mb-0">© 2026 Anbu Services. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+```

@@ -1,0 +1,124 @@
+<!-- Task 1 — Setup a New Project
+Create a new HTML file and link Bootstrap via CDN.
+Add a <div class="container"> and confirm styling works.
+
+Task 2 
+Create a 3-column layout with .col classes.
+Make it responsive: 3 columns on large screens, stacked on small screens
+
+Task 3
+Inside one column, add a nested row with two sub-columns.
+
+Task 4 — Typography & Spacing
+Add headings, paragraphs, and apply text utilities like .text-center, .text-primary.
+Use spacing utilities (p-, m-) to style sections. -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bootstrap Tasks</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+
+    <!-- Task 1: Container -->
+    <div class="container my-5">
+
+      <h1 class="text-center text-primary mb-4">
+        Bootstrap Layout
+      </h1>
+
+      <!-- Task 2: Main Row -->
+      <div class="row">
+
+        <!-- Column 1 -->
+        <div class="col-12 col-lg-4 p-3">
+          <div class="border p-4">
+
+            <h2 class="text-primary">
+              Column 1
+            </h2>
+
+            <p>
+              This is the first column. On small screens,
+              all columns will stack vertically.
+            </p>
+
+          </div>
+        </div>
+
+
+        <!-- Column 2 -->
+        <div class="col-12 col-lg-4 p-3">
+          <div class="border p-4">
+
+            <h2 class="text-primary text-center mb-3">
+              Column 2
+            </h2>
+
+            <p>
+              This column contains nested columns.
+            </p>
+
+            <!-- Task 3: Nested Row -->
+            <div class="row">
+
+              <!-- Sub Column 1 -->
+              <div class="col-6 p-2">
+                <div class="border p-3 text-center">
+                  <h5 class="text-primary">
+                    Sub Column 1
+                  </h5>
+                </div>
+              </div>
+
+              <!-- Sub Column 2 -->
+              <div class="col-6 p-2">
+                <div class="border p-3 text-center">
+                  <h5 class="text-primary">
+                    Sub Column 2
+                  </h5>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Column 3 -->
+        <div class="col-12 col-lg-4 p-3">
+          <div class="border p-4">
+
+            <h2 class="text-primary">
+              Column 3
+            </h2>
+
+            <p>
+              This is the third column with Bootstrap
+              spacing utilities.
+            </p>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>s
